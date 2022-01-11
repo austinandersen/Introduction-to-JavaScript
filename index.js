@@ -174,9 +174,28 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-
+let user = 1
+let computer = Math.floor(Math.random())
 function game(user, computer){
-  
+  if(user === 0 && computer === 1) {
+    return 'you win!'
+  }else if(user === 1 && computer === 1) {
+    return 'it\'s a tie!'
+  }else if(user === 2 && computer === 1) {
+    return 'you lose!'
+  } else if(user === 0 && computer === 0) {
+    return 'it\'s a tie!'
+  }else if(user === 0 && computer === 2) {
+    return 'you lose!'
+  } else if(user === 1 && computer === 0) {
+    return 'you lose!'
+  }else if(user === 1 && computer === 2) {
+    return 'you win!'
+  }else if(user === 2 && computer === 0) {
+    return 'you win!'
+  }else if(user === 2 && computer === 2) {
+    return 'it\'s a tie!'
+  }
 }
 
 
@@ -192,8 +211,10 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+let km = 10
+function miles(){
+  miles = km / 1.609
+  return miles 
 }
 
 
@@ -206,8 +227,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+const cm = 100
+function feet(){
+  feet = cm / 30.48
+  return feet
 }
 
 
@@ -222,8 +245,20 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+let word = "bottles";
+let count = 99;
+function annoyingSong(){
+while (count > 0) {
+    console.log(count + " " + word + " of beer on the wall");
+    console.log(count + " " + word + " of beer,");
+    console.log("Take one down, pass it around,");
+    count = count - 1;
+    if (count > 0) {
+        console.log(count + " " + word + " of beer on the wall.");
+    } else {
+        console.log("No more " + word + " of beer on the wall.");
+    }
+}
 }
 
 
