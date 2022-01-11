@@ -19,7 +19,12 @@ Do the following:
 
    HINT: no function required
 */
-
+const votingAge = 20
+if (votingAge > 18){
+  console.log('true')
+}else{
+  console.log('false')
+}
 
 
 /*
@@ -32,7 +37,12 @@ Do the following:
 
    HINT: no function required
 */
-
+let var1 = 5
+let var2 = 10
+if (var1 < var2){
+  let var1 = 15
+}
+console.log(var1)
 
 
 
