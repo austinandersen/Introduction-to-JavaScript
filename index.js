@@ -57,7 +57,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+const year = '1999'
+console.log(Math.floor(year))
 
 
 
@@ -70,8 +71,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+const a = 2
+const b = 3
+function multiply(a, b){
+  console.log(multiply)
 }
 
 
@@ -86,8 +89,11 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(){
+  const humanYears = 2
+  dogYears = humanYears * 7
+  dogYears
+
 }
 
 
@@ -119,8 +125,29 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+const weight = 10
+const age = 2
+function hungryDog(weight, age){
+  if(age >= 1) {
+    if(weight <= 5) {
+      return weight * .05
+    } else if(weight > 5 && weight <= 10) {
+      return weight * .04
+    } else if(weight > 10 && weight <= 15) {
+      return weight * .03
+    } else if(weight > 15) {
+      return weight * .02
+    }
+  }else {
+    if(age > 2/12 && age <= 4/12){
+      return weight * .10
+    } else if (age > 4/12 && age <= 7/12) {
+      return weight * .05
+    } else if (age > 7/12 && age <= 1){
+      return weight * .04
+    }
+  }
+  console.log(hungryDog)
 }
 
 
@@ -149,7 +176,7 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 */
 
 function game(user, computer){
-  /*add your code here*/
+  
 }
 
 
